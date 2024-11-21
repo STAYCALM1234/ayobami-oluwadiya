@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperCars Ltd.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      font-weight: 500;
+    }
+
+    nav {
+      background-color: #444;
+      overflow: hidden;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      padding: 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    section.hero {
+      background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    section.hero h2 {
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    section.hero p {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .car-models {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 0;
+    }
+
+    .car-model {
+      background-color: white;
+      padding: 20px;
+      width: 30%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .car-model img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .car-model h3 {
+      margin-top: 10px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .car-model p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    section.contact {
+      background-color: #333;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section.contact h2 {
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+
+    form {
+      display: block;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    form button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .car-models {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .car-model {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+
+      section.hero h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>SuperCars Ltd.</h1>
+    <p>Your Dream Car Awaits</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#models">Car Models</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2><img src="gg.jpg"" style="font-size: 1200px 500px;"></h2>
+    <p>Discover the latest models and experience the thrill of driving.</p>
+  </section>
+
+  <!-- Car Models -->
+  <section id="models" class="car-models">
+    <div class="car-model">
+      <img src="download (2).jpg">
+      <h3>Model 1</h3>
+      <p>Luxury sports car, top performance, and sleek design.</p>
+    </div>
+    <div class="car-model">
+      <img src="download.jpg">
+      <h3>Model 2</h3>
+      <p>Modern city car with exceptional fuel efficiency.</p>
+    </div>
+    <div class="car-model">
+      <img src="images.jpg" alt="Car Model 3">
+      <h3>Model 3</h3>
+      <p>Family-friendly SUV with advanced safety features.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us for inquiries or to schedule a test drive.</p>
+    <form action="#">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 SuperCars Ltd. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
